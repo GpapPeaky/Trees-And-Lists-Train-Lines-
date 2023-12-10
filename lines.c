@@ -1,5 +1,5 @@
 #include "lines.h"
-#include "default/default.h"
+#include "default.h"
 #include "junctions.h"
 
 line* line_list = NULL;

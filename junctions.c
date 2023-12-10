@@ -1,11 +1,10 @@
 #include "junctions.h"
-#include "default/default.h"
 
 junc* hub = NULL;
 junc* workshop = NULL;
 
 void init_hub(char* name){
-    
+
     hub = (junc*)malloc(sizeof(junc));
 
     hub->info.name = name;
