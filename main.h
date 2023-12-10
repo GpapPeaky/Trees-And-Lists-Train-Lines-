@@ -9,7 +9,7 @@
 */
 
 #include "junctions.h"
-#include "default/default.h"
+#include "default.h"
 #include "lines.h"
 #include "locomotive.h"
 
