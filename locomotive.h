@@ -8,6 +8,11 @@
  * This Library Serves As A Locomotive Struct Pointer Library
 */
 
+#include "_macros.h"
+
+#ifndef LOCOMOTIVES
+#define LOCOMOTIVES
+
 enum locomotive_t{
     DIESEL = 1,
     ELECTRIC = 2,
@@ -31,11 +36,6 @@ struct locomotive{
 };
 
 typedef struct locomotive loco;
-
-#include "_macros.h"
-
-#ifndef LOCOMOTIVES
-#define LOCOMOTIVES
 
 /**
  * For Enum Printing

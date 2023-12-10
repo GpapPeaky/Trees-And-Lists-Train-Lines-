@@ -8,7 +8,12 @@
  * This Library Serves As A Train Junction Line Simulation
 */
 
-double stability_c = 0.275;
+#include "_macros.h"
+
+#ifndef LOCATION
+#define LOCATION
+
+#include "junctions.h"
 
 struct location{
     double distance_from_hub;
@@ -17,12 +22,6 @@ struct location{
 };
 
 typedef struct location location;
-
-#include "_macros.h"
-#include "junctions.h"
-
-#ifndef LOCATION
-#define LOCATION
 
 /**
  * @param current_pos The distance of the junction from the hub

@@ -2,7 +2,7 @@
 
 void new_scope(void){
 
-    for(int i = 0 ; i < 60 ; i++){
+    for(int i = 0 ; i < 120 ; i++){
         printf("%c",196);
     }
     printf("\n");

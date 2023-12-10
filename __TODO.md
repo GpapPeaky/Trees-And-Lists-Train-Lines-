@@ -1,5 +1,3 @@
-NOTE: add struct for destination to fix cost in locomotive struct
-
 IDEA: make commands in main 
 
 IDEA: figure out make
@@ -18,4 +16,8 @@ TODO: figure out the function of distance calculation
 
 TODO: add balance and profit (economy)
 
+TODO: fix cost in locomotive (related to distance)
+
 FIXME: line creation exceptions (lines.c)
+
+FIXME: - P command

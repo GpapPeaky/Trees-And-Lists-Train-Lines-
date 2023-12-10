@@ -8,6 +8,11 @@
  * The Library Include Declarations Of All Line Related Methods
 */
 
+#include "_macros.h"
+
+#ifndef LINES
+#define LINES
+
 struct locomotive_line{
     int id;
     int start;
@@ -17,11 +22,6 @@ struct locomotive_line{
 };
 
 typedef struct locomotive_line line;
-
-#include "_macros.h"
-
-#ifndef LINES
-#define LINES
 
 extern line* line_list;
 
