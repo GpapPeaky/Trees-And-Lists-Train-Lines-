@@ -1,7 +1,7 @@
 /**
  * @author Gpap Peaky
  * 
- * @version 4.12.2023
+ * @version 10.12.2023
  * 
  * @brief Library for macros and definitions
  * 
