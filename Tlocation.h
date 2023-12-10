@@ -1,7 +1,7 @@
 /**
  * @author Gpap Peaky
  * 
- * @version 9.12.2023
+ * @version 10.12.2023
  * 
  * @brief Simple C - library for Location Calculations (Lists/Stacks)
  * 
