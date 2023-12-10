@@ -8,9 +8,19 @@
  * This Library Serves As A Train Junction Line Simulation
 */
 
+#include "_macros.h"
+
+typedef struct junction junc;
+
+#ifndef JUNCTIONS
+#define JUNCTIONS
+
+#include "Tlocation.h"
+
 struct junc_info{
     int id;
     char* name;
+    location pos;
 };
 
 typedef struct junc_info info;
@@ -19,19 +29,6 @@ struct junction{
     info info;
     struct junction* next;
 };
-
-typedef struct junction junc;
-
-/*
-    struct locomotive{
-        int passengers;
-    }
-*/
-
-#include "_macros.h"
-
-#ifndef JUNCTIONS
-#define JUNCTIONS
 
 extern junc* hub;
 extern junc* workshop;
