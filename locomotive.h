@@ -1,7 +1,7 @@
 /**
  * @author Gpap Peaky
  * 
- * @version 10.12.2023
+ * @version 14.12.2023
  * 
  * @brief Simple C - library for Locomotives (Lists/Stacks)
  * 

@@ -15,12 +15,9 @@ typedef struct junction junc; /* Correct Field */
 #ifndef JUNCTIONS
 #define JUNCTIONS
 
-#include "location.h"
-
 struct junc_info{
     int id;
     char* name;
-    struct location* pos;
 };
 
 typedef struct junc_info info;
