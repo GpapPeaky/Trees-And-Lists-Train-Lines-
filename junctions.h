@@ -1,7 +1,7 @@
 /**
  * @author Gpap Peaky
  * 
- * @version 10.12.2023
+ * @version 14.12.2023
  * 
  * @brief Simple C - library for Junctions (Lists/Stacks)
  * 
@@ -10,17 +10,17 @@
 
 #include "_macros.h"
 
-typedef struct junction junc;
+typedef struct junction junc; /* Correct Field */
 
 #ifndef JUNCTIONS
 #define JUNCTIONS
 
-#include "Tlocation.h"
+#include "location.h"
 
 struct junc_info{
     int id;
     char* name;
-    location pos;
+    struct location* pos;
 };
 
 typedef struct junc_info info;
