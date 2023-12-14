@@ -13,6 +13,8 @@
 #ifndef LOCOMOTIVES
 #define LOCOMOTIVES
 
+#include "junctions.h"
+
 enum locomotive_t{
     DIESEL = 1,
     ELECTRIC = 2,
@@ -25,6 +27,7 @@ struct locomotive_info{
     int passengers;
     int passenger_cap;
     int cost;
+    junc* current_junction;
 };
 
 typedef struct locomotive_info loco_info;

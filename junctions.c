@@ -36,9 +36,9 @@ void add_new_junction(int id,char* name){
 
     /* Set location field values */
 
-    new_junction->info.pos.position_id = id;
-    new_junction->info.pos.position = new_junction;
-    new_junction->info.pos.distance_from_hub = rand() % DISTANCE_UPPER_BOUND;
+    new_junction->info.pos->position_id = id;
+    new_junction->info.pos->position = new_junction;
+    new_junction->info.pos->distance_from_hub = rand() % DISTANCE_UPPER_BOUND;
 
     /*IDEA: READ NAMES FROM NAMES.TXT FILE*/
 
@@ -65,7 +65,7 @@ void print_junctions(void){
     junc* current = hub;
 
     for(;current->info.id != -1; current = current->next){
-        printf("%s,\t\tID: %d,\t\tHub Distance: %lf\t\t -(Distance ID: %d)\n", current->info.name, current->info.id,current->info.pos.distance_from_hub,current->info.pos.position_id);
+        printf("%s,\t\tID: %d,\t\tHub Distance: %lf\t\t -(Distance ID: %d)\n", current->info.name, current->info.id,current->info.pos->distance_from_hub,current->info.pos->position_id);
     }
 
     return;

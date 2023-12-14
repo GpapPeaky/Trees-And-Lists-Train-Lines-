@@ -17,5 +17,6 @@
 #define FAILURE 1
 #define DISTANCE_UPPER_BOUND 600 /* Distance Fro Hub Upper Bound (For Random) */
 #define STABILITY_C 0.275678f /* Profit Stability Constant */
+#define STABILITY_C_BALANCE 0.125211f /* Profit Stability Constant */
 
 /*ONLY MACROS AND DEFINITIONS HERE*/
