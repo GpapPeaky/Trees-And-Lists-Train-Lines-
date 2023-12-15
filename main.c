@@ -17,6 +17,8 @@ void info_menu(void);
 
 int main(void){
 
+    srand(12069); /* Change Seed */
+
     char input[10]; /* Buffer 10 characters */
     char junc_name[1000]; /* Buffer 1000 characters */
     char hub_name[1000]; /* Buffer 1000 characters */
@@ -95,6 +97,7 @@ int main(void){
                 new_scope();
                 break;
             case 'Q':
+                __DEBUG();
                 exit(SUCCESS);
             case 'I':
                 info_menu();
@@ -108,6 +111,8 @@ int main(void){
 
     return SUCCESS;
 }
+
+/*____________________________________________________________________________________________________________*/
 
 void info_menu(void){
     printf("    Commands:\n");

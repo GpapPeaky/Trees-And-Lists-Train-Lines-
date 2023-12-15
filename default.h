@@ -25,3 +25,17 @@ void new_scope(void);
  * Used For Triggering Dovas
 */
 void dovas(void);
+
+/**
+ * Debug Print Function
+ * 
+ * Tin-der-as tam tamm tata-tatam
+*/
+void tinder(void);
+
+/**
+ * Debug Print
+ * 
+ * Default Debug Print
+*/
+void __DEBUG(void);

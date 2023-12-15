@@ -34,6 +34,10 @@ void add_new_junction(int id,char* name){
     new_junction->info.name = malloc(strlen(name) + 1); // +1 for the null terminator
     strcpy(new_junction->info.name, name);
 
+    /* DISTANCE FROM HUB */
+
+    new_junction->info.distance_from_hub = (double) (rand() % DISTANCE_UPPER_BOUND / ((double)(rand() % DISTANCE_UPPER_BOUND) / 1000));
+
     /*IDEA: READ NAMES FROM NAMES.TXT FILE*/
 
     new_junction->next = NULL;
@@ -49,7 +53,7 @@ void add_new_junction(int id,char* name){
         hub = new_junction;
     }
 
-    printf(" - %s,\t\tID: <%d> Created \n",name,id);
+    printf(" - %s,\t\tID: <%d> Created,\t\tDistance from hub: %.2f\n",name,id,new_junction->info.distance_from_hub);
 
     return;
 }
@@ -59,7 +63,7 @@ void print_junctions(void){
     junc* current = hub;
 
     for(;current->info.id != -1; current = current->next){
-        printf("%s,\t\tID: <%d>\n", current->info.name, current->info.id);
+        printf("%s,\t\tID: <%d>,\t\tDistance from hub: %.2f\n", current->info.name, current->info.id, current->info.distance_from_hub);
     }
 
     return;

@@ -17,3 +17,11 @@ void dovas(void){
     }
     return;
 }
+
+void tinder(void){
+    printf("Tinderas xixixixi\n");
+}
+
+void __DEBUG(void){
+    printf("DEBUG_MSG__\n");
+}
