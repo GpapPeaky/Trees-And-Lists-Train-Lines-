@@ -18,6 +18,7 @@ struct locomotive_line{
     int start;
     int end;
     char* name;
+    double hub_distance;
     struct locomotive_line* next;
 };
 

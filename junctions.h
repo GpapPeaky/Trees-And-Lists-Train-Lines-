@@ -18,6 +18,7 @@ typedef struct junction junc; /* Correct Field */
 struct junc_info{
     int id;
     char* name;
+    double distance_from_hub;
 };
 
 typedef struct junc_info info;

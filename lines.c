@@ -41,6 +41,8 @@ int add_new_line(int id_start, int id_end, char* line_name,int id){
         current2 = current2->next;
     }
 
+    new_line->hub_distance = current->info.distance_from_hub + current2->info.distance_from_hub;
+
     if(current2 == NULL){
         printf("No Ending Junction With ID %d Exists\n",id_end);
         return FAILURE;
@@ -74,7 +76,7 @@ void print_lines(){
     line* lines = line_list;
 
     while(lines != NULL){
-        printf("<%s>\n",lines->name);
+        printf("<%s>,\t\t Junctions: %d -> %d,\t\t Line ID: %d, \t\tDistance from hub: %.2f\n",lines->name, lines->start, lines->end, lines->id, lines->hub_distance);
         lines = lines->next;
     }
 
