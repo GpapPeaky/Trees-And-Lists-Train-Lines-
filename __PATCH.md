@@ -1,3 +1,7 @@
+---
+
+## IDEA
+---
 IDEA: make commands in main 
 
 IDEA: figure out make
@@ -7,6 +11,11 @@ IDEA: make a map command
 IDEA: make so that undeclared junctions get read-only from txt names randomly
 
 IDEA: add loco_list for locomotives
+
+---
+
+## TODO/FIXME
+---
 
 TODO: find the correct constant for the cost
 
@@ -20,8 +29,10 @@ FIXME: line creation exceptions (lines.c)
 
 FIXME: - P command
 
-___________________________________________________________________________________________
+---
 
+## COMP
+---
 COMP: -JUNCTION.C
 
 COMP: -DEFAULT.C
