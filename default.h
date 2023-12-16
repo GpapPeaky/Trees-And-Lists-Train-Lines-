@@ -12,6 +12,8 @@
 
 #include "_macros.h"
 
+extern const char errb;
+
 /**
  * New Scope Block
  * 
