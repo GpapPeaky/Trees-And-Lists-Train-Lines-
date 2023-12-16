@@ -1,5 +1,7 @@
 #include "default.h"
 
+const char errb = 219;
+
 void new_scope(void){
 
     for(int i = 0 ; i < 120 ; i++){
@@ -23,5 +25,9 @@ void tinder(void){
 }
 
 void __DEBUG(void){
-    printf("DEBUG_MSG__\n");
+    printf("\n");
+    printf("%c%c%c%c%c%c%c%c%c%c%c\n",errb,errb,errb,errb,errb,errb,errb,errb,errb,errb,errb);
+    printf("%c-SUCCESS-%c\n",219,219);
+    printf("%c%c%c%c%c%c%c%c%c%c%c\n",errb,errb,errb,errb,errb,errb,errb,errb,errb,errb,errb);
+    printf("\n");
 }
