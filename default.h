@@ -3,7 +3,7 @@
  * 
  * @brief Simple C - library for learning purposes
  * 
- * @version 29.11.23
+ * @version 16.12.23
  * 
  * This Library Serves Only Prints
 */
