@@ -1,7 +1,7 @@
 /**
  * @author Gpap Peaky
  * 
- * @version 14.12.2023
+ * @version 27.12.2023
  * 
  * @brief Simple C - library for Locomotives (Lists/Stacks)
  * 
@@ -36,6 +36,8 @@ struct locomotive{
     loco_info l_info;
     int id;
     loco_t type;
+    struct locomotive* left;
+    struct locomotive* right;
 };
 
 typedef struct locomotive loco;
@@ -47,13 +49,28 @@ typedef struct locomotive loco;
 */
 extern const char* locomotive_type_print[];
 
+extern loco* root; /* Locomotives' Tree Root */
+
 /**
  * Creates a new locomotive
  * 
  * @param id Train's id
  * @param type Enumerator for the train's type
+ * @param root_ptr Pointer to the root of the locomotives' tree
 */
-void assign_locomotive(int id,loco_t type);
+void assign_locomotive(int id,loco_t type, loco** root_ptr);
+
+/**
+ * In-order traversal of the locomotives tree
+ * 
+ * @param root The root of the locomotives' tree
+*/
+void in_order(loco* root);
+
+/**
+ * @param node Node to visit
+*/
+void visit(loco* node);
 
 /**
  * Prints the locomotives list

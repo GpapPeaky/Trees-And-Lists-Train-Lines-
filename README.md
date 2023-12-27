@@ -2,8 +2,6 @@ IDEA: make commands in main
 
 IDEA: make a map command
 
-IDEA: add loco_list for locomotives
-
 TODO: find the correct constant for the cost
 
 TODO: add balance and profit (economy)

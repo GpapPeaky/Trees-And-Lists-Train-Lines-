@@ -1,7 +1,7 @@
 /**
  * @author Gpap Peaky
  * 
- * @version 9.12.2023
+ * @version 27.12.2023
  * 
  * @brief Simple C - library for Lines (Lists/Stacks)
  * 
@@ -50,10 +50,9 @@ int add_new_line(int id_start, int id_end, char* line_name,int line_id);
  * @pre The locomotive should be at the line start location
  * @post The locomotive's location is currently at the end of the line
  * @related line_list
- * @relatedalso location struct
+ * @relatedalso root (Locomotives' tree)
 */
 void travel(int line_id,int locomotive_id);
-/* [IDEA] : add locomotive struct */
 
 /**
  * Prints the already created lines

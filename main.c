@@ -3,7 +3,7 @@
 /**
  * @author Gpap Peaky
  * 
- * @version 8/12/2023
+ * @version 27/12/2023
  * 
  * @brief Main Junction Function
  * 
@@ -62,7 +62,7 @@ int main(void){
                 printf("Locomotive type: ");
                 scanf("%u",&type);
 
-                assign_locomotive(loco_id,type);
+                assign_locomotive(loco_id,type, &root);
                 new_scope();
                 break;
             case 'N':
